@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mock CM Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Mock CM Tracker</h1>
+<p>This is a publicly testable version of CM Tracker for automation testing.</p>
+
+<div class="container">
+
+    <label>Select TPN:</label>
+    <select id="TPNSelect">
+        <option value="611-SKU000208-P">611-SKU000208-P</option>
+        <option value="611-SKU000209-P">611-SKU000209-P</option>
+        <option value="611-SKU000111-P">611-SKU000111-P</option>
+    </select>
+
+    <br><br>
+
+    <label>Enter Serial:</label>
+    <input id="SearchSerialNumbers" placeholder="Enter serial..." />
+
+    <br><br>
+
+    <button id="btnSubmit">Search</button>
+
+    <br><br><br>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Part Number</th>
+                <th>Serial</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="result">
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
